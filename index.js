@@ -16,5 +16,5 @@ const processMail = (message) => {
   let emailstring = message
   emailjson = JSON.parse(emailstring)
 
-  console.log(emailjson);
+  document.getElementById('main').innerHTML = emailjson.email.header
 }
