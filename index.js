@@ -15,4 +15,6 @@ get.on('message',(message) => {
 const processMail = (message) => {
   let emailstring = message
   emailjson = JSON.parse(emailstring)
+
+  console.log(emailjson);
 }
